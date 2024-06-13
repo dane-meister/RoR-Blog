@@ -13,3 +13,248 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #c21010;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    width: 80%;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.edit-link, .destroy-link, .back-link {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.edit-link:hover, .destroy-link:hover, .back-link:hover {
+    color: #930202;
+    transform: translateX(5px);
+}
+
+ul.articles {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.article-item a {
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 1.25rem;
+}
+
+.article-item:hover {
+    background-color: #f0f8ff;
+    transform: translateX(5px);
+}
+
+.new-article-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #930202;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.new-article-btn:hover {
+    background-color: #470e0e;
+    transform: translateY(-2px);
+}
+
+.new-article-btn:active {
+    transform: translateY(1px);
+}
+
+/* Comment CSS */
+.comment {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment strong {
+    color: #c21010;
+}
+
+.destroy-comment-link {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.destroy-comment-link:hover {
+    color: #930202;
+    transform: translateX(5px);
+}
+
+/* Comment Form CSS */
+.comment-form {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form p {
+    margin-bottom: 1rem;
+}
+
+.comment-form .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.comment-form .form-control:focus {
+    border-color: #c21010;
+    box-shadow: 0 0 5px rgba(194, 16, 16, 0.5);
+    outline: none;
+}
+
+.comment-form .submit-btn {
+    background-color: #930202;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.comment-form .submit-btn:hover {
+    background-color: #470e0e;
+    transform: translateY(-2px);
+}
+
+.comment-form .submit-btn:active {
+    transform: translateY(1px);
+}
+
+/* Article Form CSS */
+.article-form {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.article-form .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.article-form .form-control:focus {
+    border-color: #c21010;
+    box-shadow: 0 0 5px rgba(194, 16, 16, 0.5);
+    outline: none;
+}
+
+.article-form .error-message {
+    color: #c21010;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.article-form .submit-btn {
+    background-color: #930202;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.article-form .submit-btn:hover {
+    background-color: #470e0e;
+    transform: translateY(-2px);
+}
+
+.article-form .submit-btn:active {
+    transform: translateY(1px);
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #930202;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.back-link:hover {
+    color: #470e0e;
+    transform: translateY(-2px);
+}
+
+.back-link:active {
+    transform: translateY(1px);
+}

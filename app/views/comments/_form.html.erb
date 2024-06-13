@@ -1,17 +1,17 @@
-<%= form_with model: [ @article, @article.comments.build ] do |form| %>
+<%= form_with model: [ @article, @article.comments.build ], local: true, class: 'comment-form' do |form| %>
     <p>
         <%= form.label :commenter %><br>
-        <%= form.text_field :commenter %>
+        <%= form.text_field :commenter, class: 'form-control' %>
     </p>
     <p>
         <%= form.label :body %><br>
-        <%= form.text_area :body %>
+        <%= form.text_area :body, class: 'form-control' %>
     </p>
     <p>
         <%= form.label :status %><br>
-        <%= form.select :status, Visible::VALID_STATUSES, selected: 'public' %>
+        <%= form.select :status, Visible::VALID_STATUSES, selected: 'public', class: 'form-control' %>
     </p>
     <p>
-        <%= form.submit %>
+        <%= form.submit 'Add Comment', class: 'submit-btn' %>
     </p>
 <% end %>
