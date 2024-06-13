@@ -44,6 +44,6 @@ NOTE: Current authorization credentials are limited to username: "admin" passwor
 5. Visit the application
      Open your web browser and navigate to http://localhost:3000.
 #### Contributing 
-Note: This project is a simple Ruby on Rails application created following the "Getting Started with Rails" guide. The application is designed to help new Rails developers understand the basics of Rails development, including setting up the development environment, generating a new Rails application, creating a database, and building basic CRUD (Create, Read, Update, Delete) functionality.
+Note: This project is a simple Ruby on Rails application created following the "Getting Started with Rails" guide (https://guides.rubyonrails.org/getting_started.html). The application is designed to help new Rails developers understand the basics of Rails development, including setting up the development environment, generating a new Rails application, creating a database, and building basic CRUD (Create, Read, Update, Delete) functionality.
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes. 
