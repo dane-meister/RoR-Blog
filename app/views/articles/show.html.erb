@@ -10,4 +10,14 @@
                     } %></li>
 </ul>
 
+<h2>Comments</h2>
+    <% if @article.comments.size.zero? %>
+        <p>No comments yet...</p>
+    <% else %>
+        <%= render @article.comments %>
+    <% end %>
+
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+
 <%= link_to 'Back', articles_path %>
